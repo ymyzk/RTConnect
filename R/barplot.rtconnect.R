@@ -15,11 +15,11 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     days <- as.Date(start:end, origin="1970-01-01")
 
     units <- sapply(days, daily)
-    names.arg=days
-    t.main=sprintf("# of units from %s to %s",
+    names.arg <- days
+    t.main <- sprintf("# of units from %s to %s",
                    as.character(start), as.character(end))
-    t.xlab="Day"
-    t.ylab="# of units"
+    t.xlab <- "Day"
+    t.ylab <- "# of units"
   } else if (type == "daily.version") {
     daily.version <- function(date) {
       version <- function(version) {
@@ -35,12 +35,12 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
 
     units <- sapply(dates, daily.version)
     names.arg=dates
-    t.main=sprintf("# of daily units from %s to %s",
+    t.main <- sprintf("# of daily units from %s to %s",
                    as.character(start), as.character(end))
-    t.xlab="Date"
-    t.ylab="# of units"
-    legend.text=versions
-    col=rainbow(nrow(units))
+    t.xlab <- "Date"
+    t.ylab <-"# of units"
+    legend.text <- versions
+    col <- rainbow(nrow(units))
   } else if (type == "weekly") {
     weekly <- function(week) {
       sum(subset(rtc, date.gte=week.to.date(week),
@@ -53,11 +53,11 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     weeks <- unique(sapply(days, date.to.week))
 
     units <- sapply(weeks, weekly)
-    names.arg=weeks
-    t.main=sprintf("# of weekly units from %s to %s",
+    names.arg <- weeks
+    t.main <- sprintf("# of weekly units from %s to %s",
                      as.character(weeks[1]), as.character(weeks[length(weeks)]))
-    t.xlab="Week"
-    t.ylab="# of units"
+    t.xlab <- "Week"
+    t.ylab <-"# of units"
   } else if (type == "weekly.version") {
     weekly.version <- function(week) {
       version <- function(version) {
@@ -75,13 +75,13 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     versions <- sort(unique(rtc$Version))
 
     units <- sapply(weeks, weekly.version)
-    names.arg=weeks
-    t.main=sprintf("# of weekly units from %s to %s",
+    names.arg <- weeks
+    t.main <- sprintf("# of weekly units from %s to %s",
                    as.character(start), as.character(end))
-    t.xlab="Week"
-    t.ylab="# of units"
-    legend.text=versions
-    col=rainbow(nrow(units))
+    t.xlab <- "Week"
+    t.ylab <-"# of units"
+    legend.text <- versions
+    col <- rainbow(nrow(units))
   } else if (type == "version") {
     version <- function(version) {
       sum(subset(rtc, version=version)$Units)
@@ -90,10 +90,10 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     versions <- sort(unique(rtc$Version))
 
     units <- sapply(versions, version)
-    names.arg=versions
-    t.main=sprintf("# of units in %s versions", as.character(length(versions)))
-    t.xlab="Version"
-    t.ylab="# of units"
+    names.arg <- versions
+    t.main <- sprintf("# of units in %s versions", as.character(length(versions)))
+    t.xlab <- "Version"
+    t.ylab <-"# of units"
   } else if (type == "country") {
     country <- function(country) {
       sum(subset(rtc, country.code=country)$Units)
@@ -102,10 +102,10 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     countries <- sort(unique(rtc$Country.Code))
 
     units <- sapply(countries, country)
-    names.arg=countries
-    t.main=sprintf("# of units in %s countries", as.character(length(countries)))
-    t.xlab="Country"
-    t.ylab="# of units"
+    names.arg <- countries
+    t.main <- sprintf("# of units in %s countries", as.character(length(countries)))
+    t.xlab <- "Country"
+    t.ylab <-"# of units"
   }
 
   if (missing(main)) main <- t.main
