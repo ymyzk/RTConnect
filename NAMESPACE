@@ -1,0 +1,7 @@
+importFrom("graphics", barplot)
+export(date.to.week)
+export(week.to.date)
+export(rtconnect)
+S3method(subset, rtconnect)
+S3method(barplot, rtconnect)
+S3method(plot, rtconnect)
