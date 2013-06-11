@@ -14,7 +14,7 @@
     Type: \tab Package\cr
     Version: \tab 1.0\cr
     Date: \tab 2013-06-10\cr
-    License: \tab GPL-3\cr
+    License: \tab BSD_3_clause\cr
   }
   This package helps to analyze sales report files of iTunes Connect.
 ~~ functions ~~
