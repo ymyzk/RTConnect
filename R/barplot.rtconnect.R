@@ -20,11 +20,11 @@ function(rtc, type="daily", main=NULL, xlab=NULL, ylab=NULL) {
     t.xlab="Day"
     t.ylab="# of units"
   } else if (type == "daily.version") {
-    func <- function(date) {
-      sub.func <- function(version) {
+    daily.version <- function(date) {
+      version <- function(version) {
         sum(subset(subset(rtc, version=version), date=date)$Units)
       }
-      sapply(versions, sub.func)
+      sapply(versions, version)
     }
 
     start <- min(rtc$Begin.Date)
@@ -32,7 +32,7 @@ function(rtc, type="daily", main=NULL, xlab=NULL, ylab=NULL) {
     dates <- as.Date(start:end, origin="1970-01-01")
     versions <- sort(unique(rtc$Version))
 
-    units <- sapply(dates, func)
+    units <- sapply(dates, daily.version)
     names.arg=dates
     t.main=sprintf("# of daily units from %s to %s",
                    as.character(start), as.character(end))
@@ -58,13 +58,13 @@ function(rtc, type="daily", main=NULL, xlab=NULL, ylab=NULL) {
     t.xlab="Week"
     t.ylab="# of units"
   } else if (type == "weekly.version") {
-    func <- function(week) {
-      sub.func <- function(version) {
+    weekly.version <- function(week) {
+      version <- function(version) {
         sum(subset(rtc, version=version,
                         date.gte=week.to.date(week),
                         date.lte=week.to.date(week)+6)$Units)
       }
-      sapply(versions, sub.func)
+      sapply(versions, version)
     }
 
     start <- min(rtc$Begin.Date)
@@ -73,7 +73,7 @@ function(rtc, type="daily", main=NULL, xlab=NULL, ylab=NULL) {
     weeks <- unique(sapply(days, date.to.week))
     versions <- sort(unique(rtc$Version))
 
-    units <- sapply(weeks, func)
+    units <- sapply(weeks, weekly.version)
     names.arg=weeks
     t.main=sprintf("# of weekly units from %s to %s",
                    as.character(start), as.character(end))
