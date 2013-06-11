@@ -22,80 +22,80 @@
     rtconnect object.
   }
   \item{sku}{
-%%     ~~Describe \code{sku} here~~
-}
+    SKU.
+  }
   \item{developer}{
-%%     ~~Describe \code{developer} here~~
-}
+    developer.
+  }
   \item{title}{
-%%     ~~Describe \code{title} here~~
-}
+    title.
+  }
   \item{version}{
-%%     ~~Describe \code{version} here~~
-}
+    version.
+  }
   \item{version.lte}{
-%%     ~~Describe \code{version.lte} here~~
-}
+    version.
+  }
   \item{version.gte}{
-%%     ~~Describe \code{version.gte} here~~
-}
+    version.
+  }
   \item{product.type.identifier}{
-%%     ~~Describe \code{product.type.identifier} here~~
+    product type identifiers.
 }
   \item{units}{
-%%     ~~Describe \code{units} here~~
-}
+    number of units.
+  }
   \item{units.lte}{
-%%     ~~Describe \code{units.lte} here~~
-}
+    number of units.
+  }
   \item{units.gte}{
-%%     ~~Describe \code{units.gte} here~~
-}
+    number of units.
+  }
   \item{developer.proceeds}{
-%%     ~~Describe \code{developer.proceeds} here~~
-}
+    developer proceeds.
+  }
   \item{developer.proceeds.lte}{
-%%     ~~Describe \code{developer.proceeds.lte} here~~
-}
+    developer proceeds.
+  }
   \item{developer.proceeds.gte}{
-%%     ~~Describe \code{developer.proceeds.gte} here~~
-}
+    developer proceeds.
+  }
   \item{date}{
-%%     ~~Describe \code{date} here~~
-}
+    date.
+  }
   \item{date.lte}{
-%%     ~~Describe \code{date.lte} here~~
-}
+    date.
+  }
   \item{date.gte}{
-%%     ~~Describe \code{date.gte} here~~
-}
+    date.
+  }
   \item{customer.currency}{
-%%     ~~Describe \code{customer.currency} here~~
-}
+    customer currency.
+  }
   \item{country.code}{
-%%     ~~Describe \code{country.code} here~~
-}
+    country code.
+  }
   \item{currency.of.proceeds}{
-%%     ~~Describe \code{currency.of.proceeds} here~~
-}
+    currency of proceeds.
+  }
   \item{apple.identifier}{
-%%     ~~Describe \code{apple.identifier} here~~
-}
+    Apple identifier.
+  }
   \item{customer.price}{
-%%     ~~Describe \code{customer.price} here~~
-}
+    customer price.
+  }
   \item{promo.code}{
-%%     ~~Describe \code{promo.code} here~~
-}
+    promo code.
+  }
   \item{parent.identifier}{
-%%     ~~Describe \code{parent.identifier} here~~
-}
+    parent identifier.
+  }
   \item{subscription}{
-%%     ~~Describe \code{subscription} here~~
-}
+    subscription type.
+  }
   \item{period}{
-%%     ~~Describe \code{period} here~~
-}
+    period.
+  }
   \item{...}{
   }
 }
@@ -115,8 +115,12 @@
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-%% \seealso{
+\seealso{
+  \code{\link{kProductTypeIdentifier}}
+  \code{\link{kPromotionalCodes}}
+  \code{\link{kSubscription}}
+  \code{\link{kPeriod}}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-%% }
+}
 %% \examples{}
 %% \keyword{rtconnect}
