@@ -32,6 +32,7 @@
     $ Install: \tab "1" "1F" "1T" "F1"\cr
     $ Update: \tab "7" "7F" "7T" "F7"\cr
     $ InAppPurchase: \tab "IA1" "IA9" "IAY" "FI1"\cr
+  }
 }
 \source{
   http://www.apple.com/itunesnews/docs/AppStoreReportingInstructions.pdf
