@@ -1,11 +1,11 @@
 plot.rtconnect <-
 function(rtc, type="daily") {
   func <- function(date) {
-    sum(subset(plot, date=date)$Units)
+    sum(subset(rtc, date=date)$Units)
   }
 
-  start <- min(plot$Begin.Date)
-  end <- max(plot$End.Date)
+  start <- min(rtc$Begin.Date)
+  end <- max(rtc$End.Date)
   days <- as.Date(start:end, origin="1970-01-01")
   daily.units <- sapply(days, func)
   daily.units <- cumsum(daily.units)
