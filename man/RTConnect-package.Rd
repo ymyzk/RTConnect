@@ -11,7 +11,7 @@
 \details{
   This package helps to analyze sales report files of iTunes Connect.
 
-  For a complete list of functions, use ‘library(help = "RTConnect")’.
+  For a complete list of functions, use 'library(help = "RTConnect")'.
 }
 \author{
   Yusuke Miyazaki
