@@ -15,9 +15,9 @@
     name of the directory which daily sales report files (S_D_*_YYYYMMDD.txt) are put.
   }
 }
-\details{
+%% \details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%% }
 \value{
   A rtconnect object ('rtconnect', 'data.frame').
 %%  ~Describe the value returned
@@ -26,21 +26,20 @@
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%% \references{
 %% ~put references to the literature/web site here ~
-}
+%% }
 \author{
   Yusuke Miyazaki
 }
-\note{
+%% \note{
 %%  ~~further notes~~
-}
+%% }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%% \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
-\examples{
-}
-\keyword{rtconnect}
+%% }
+%% \examples{}
+%%\keyword{rtconnect}

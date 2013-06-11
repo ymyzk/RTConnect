@@ -78,7 +78,7 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
     names.arg=weeks
     t.main=sprintf("# of weekly units from %s to %s",
                    as.character(start), as.character(end))
-    t.xlab="Date"
+    t.xlab="Week"
     t.ylab="# of units"
     legend.text=versions
     col=rainbow(nrow(units))

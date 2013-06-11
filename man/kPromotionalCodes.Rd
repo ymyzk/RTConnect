@@ -26,4 +26,4 @@
   kPromotionalCodes
   kPromotionalCodes$GiftPurchase
 }
-\keyword{constants}
+%% \keyword{constants}

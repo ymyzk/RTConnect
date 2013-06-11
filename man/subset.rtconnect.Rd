@@ -99,26 +99,24 @@
   \item{...}{
   }
 }
-\details{
+%% \details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%% }
 \value{
   A rtconnect object.
 }
-\references{
+%% \references{
 %% ~put references to the literature/web site here ~
-}
+%% }
 \author{
   Yusuke Miyazaki
 }
-\note{
-}
+%% \note{}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%% \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
-\examples{
-}
-\keyword{rtconnect}
+%% }
+%% \examples{}
+%% \keyword{rtconnect}

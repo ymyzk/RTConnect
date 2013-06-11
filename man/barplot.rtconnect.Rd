@@ -31,31 +31,31 @@
   \item{...}{
   }
 }
-\details{
+%% \details{
 %%  ~~ If necessary, more details than the description above ~~
-}
-\value{
+%% }
+%% \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-}
-\references{
+%% }
+%% \references{
 %% ~put references to the literature/web site here ~
-}
+%% }
 \author{
   Yusuke Miyazaki
 }
-\note{
+%% \note{
 %%  ~~further notes~~
-}
+%% }
 
-\seealso{
+%% \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
-\examples{
-}
+%% }
+%% \examples{
+%% }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{rtconnect}
+%% \keyword{rtconnect}

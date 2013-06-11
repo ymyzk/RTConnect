@@ -41,4 +41,4 @@
   kProductTypeIdentifier
   kProductTypeIdentifier$iPhoneInstall
 }
-\keyword{constants}
+%% \keyword{constants}

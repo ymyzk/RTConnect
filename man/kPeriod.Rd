@@ -28,4 +28,4 @@
   kPeriod
   kPeriod$P1Month
 }
-\keyword{constants}
+%% \keyword{constants}
