@@ -1,5 +1,5 @@
 subset.rtconnect <-
-function(rtc, sku=NULL, developer=NULL, title=NULL,
+function(x, sku=NULL, developer=NULL, title=NULL,
                              version=NULL, version.lte=NULL, version.gte=NULL,
                              product.type.identifier=NULL,
                              units=NULL, units.lte=NULL, units.gte=NULL,
@@ -11,8 +11,29 @@ function(rtc, sku=NULL, developer=NULL, title=NULL,
                              currency.of.proceeds=NULL, apple.identifier=NULL,
                              customer.price=NULL, promo.code=NULL,
                              parent.identifier=NULL, subscription=NULL,
-                             period=NULL) {
+                             period=NULL, ...) {
+  rtc <- x
   class(rtc) <- "data.frame"
+
+  # For R CMD check
+  SKU <- NULL
+  Developer <- NULL
+  Title <- NULL
+  Version <- NULL
+  Product.Type.Identifier <- NULL
+  Units <- NULL
+  Developer.Proceeds <- NULL
+  Begin.Date <- NULL
+  End.Date <- NULL
+  Customer.Currency <- NULL
+  Country.Code <- NULL
+  Currency.of.Proceeds <- NULL
+  Apple.Identifier <- NULL
+  Customer.Price <- NULL
+  Promo.Code <- NULL
+  Parent.Identifier <- NULL
+  Subscription <- NULL
+  Period <- NULL
 
   if (!(is.null(sku))) {
     rtc <- subset(rtc, SKU==sku)

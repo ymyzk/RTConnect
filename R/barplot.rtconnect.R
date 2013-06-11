@@ -1,5 +1,6 @@
 barplot.rtconnect <-
-function(rtc, type="daily", main=NULL, xlab=NULL, ylab=NULL) {
+function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
+  rtc <- height
   names.arg <- NULL
   legend.text <- NULL
   col <- NULL

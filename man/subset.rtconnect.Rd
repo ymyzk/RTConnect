@@ -7,7 +7,7 @@
   Return subsets of rtconnect object which meet conditions.
 }
 \usage{
-  \method{subset}{rtconnect}(rtc, sku = NULL, developer = NULL, title = NULL,
+  \method{subset}{rtconnect}(x, sku = NULL, developer = NULL, title = NULL,
        version = NULL, version.lte = NULL, version.gte = NULL,
        product.type.identifier = NULL, units = NULL, units.lte = NULL,
        units.gte = NULL, developer.proceeds = NULL,
@@ -15,10 +15,10 @@
        date = NULL, date.lte = NULL, date.gte = NULL, customer.currency = NULL,
        country.code = NULL, currency.of.proceeds = NULL,
        apple.identifier = NULL, customer.price = NULL, promo.code = NULL,
-       parent.identifier = NULL, subscription = NULL, period = NULL)
+       parent.identifier = NULL, subscription = NULL, period = NULL, ...)
 }
 \arguments{
-  \item{rtc}{
+  \item{x}{
     rtconnect object.
   }
   \item{sku}{
@@ -96,6 +96,8 @@
   \item{period}{
 %%     ~~Describe \code{period} here~~
 }
+  \item{...}{
+  }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~

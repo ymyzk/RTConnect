@@ -7,15 +7,17 @@
   Plot units of rtconnect object.
 }
 \usage{
-  \method{plot}{rtconnect}(rtc, type = "daily")
+  \method{plot}{rtconnect}(x, type = "daily", ...)
 }
 \arguments{
-  \item{rtc}{
+  \item{x}{
     rtconnect object.
   }
   \item{type}{
     string giving the type of plot. The following values are possible:
     "daily" and "weekly".
+  }
+  \item{...}{
   }
 }
 \details{

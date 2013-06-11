@@ -7,11 +7,11 @@
   Plot units of rtconnect object.
 }
 \usage{
-  \method{barplot}{rtconnect}(rtc, type = "daily",
-      main = NULL, xlab = NULL, ylab = NULL)
+  \method{barplot}{rtconnect}(height, type = "daily",
+      main = NULL, xlab = NULL, ylab = NULL, ...)
 }
 \arguments{
-  \item{rtc}{
+  \item{height}{
     rtconnect object.
   }
   \item{type}{
@@ -27,6 +27,8 @@
   }
   \item{ylab}{
     a label for the y axis.
+  }
+  \item{...}{
   }
 }
 \details{

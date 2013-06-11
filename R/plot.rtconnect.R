@@ -1,5 +1,6 @@
 plot.rtconnect <-
-function(rtc, type="daily") {
+function(x, type="daily", ...) {
+  rtc <- x
   func <- function(date) {
     sum(subset(rtc, date=date)$Units)
   }
