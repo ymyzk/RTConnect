@@ -11,16 +11,17 @@
   kSubscription
 }
 \format{
-  The format is:
-List of 2
- $ New    : chr "New"
- $ Renewal: chr "Renewal"
+  The format is a list of 2 characters.
+  \tabular{ll}{
+    $ New: \tab "New"\cr
+    $ Renewal: \tab "Renewal"\cr
+  }
 }
 \source{
   http://www.apple.com/itunesnews/docs/AppStoreReportingInstructions.pdf
 }
 \examples{
-#  rtc <- rtconnect()
-#  subset(rtc, subscription=kSubscription$New)
+  kSubscription
+  kSubscription$Renewal
 }
-\keyword{datasets}
+%% \keyword{constants}

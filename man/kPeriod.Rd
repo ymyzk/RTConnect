@@ -11,20 +11,21 @@
   kPeriod
 }
 \format{
-  The format is:
-List of 6
- $ P7Days  : chr "7 Days"
- $ P1Month : chr "1 Month"
- $ P2Months: chr "2 Months"
- $ P3Months: chr "3 Months"
- $ P6Months: chr "6 Months"
- $ P1Year  : chr "1 Year"
+  The format is a list of 6 characters.
+  \tabular{ll}{
+    $ P7Days: \tab "7 Days"\cr
+    $ P1Month: \tab "1 Month"\cr
+    $ P2Months: \tab "2 Months"\cr
+    $ P3Months: \tab "3 Months"\cr
+    $ P6Months: \tab "6 Months"\cr
+    $ P1Year: \tab "1 Year"\cr
+  }
 }
 \source{
   http://www.apple.com/itunesnews/docs/AppStoreReportingInstructions.pdf
 }
 \examples{
-#  rtc <- rtconnect()
-#  subset(rtc, period=kPeriod$P7Days);
+  kPeriod
+  kPeriod$P1Month
 }
-\keyword{datasets}
+%% \keyword{constants}

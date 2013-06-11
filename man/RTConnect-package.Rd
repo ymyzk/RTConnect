@@ -9,25 +9,22 @@
   R functions for analyzing iTunes Connect sales report files
 }
 \details{
-  \tabular{ll}{
-    Package: \tab RTConnect\cr
-    Type: \tab Package\cr
-    Version: \tab 1.0\cr
-    Date: \tab 2013-06-10\cr
-    License: \tab GPL-3\cr
-  }
   This package helps to analyze sales report files of iTunes Connect.
-~~ functions ~~
+
+  For a complete list of functions, use 'library(help = "RTConnect")'.
 }
 \author{
   Yusuke Miyazaki
 
   Maintainer: Yusuke Miyazaki <miyazaki.dev@gmail.com>
 }
-\references{
-}
+%% \references{
+%% ~~ Literature or other references for background information ~~
+%% }
+%% \seealso{
+%% ~~ Optional links to other man pages, e.g. ~~
+%%~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+%% }
+%% \examples{
+%% }
 \keyword{package}
-\seealso{
-}
-\examples{
-}
