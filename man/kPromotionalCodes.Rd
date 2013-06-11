@@ -11,18 +11,19 @@
   kPromotionalCodes
 }
 \format{
-  The format is:
-List of 4
- $ Developer     : chr "CR - RW"
- $ GiftPurchase  : chr "GP"
- $ GiftRedemption: chr "GR"
- $ Education     : chr "EDU"
+  The format is a list of 4 characters.
+  \tabular{ll}{
+    $ Developer: \tab "CR - RW"\cr
+    $ GiftPurchase: \tab "GP"\cr
+    $ GiftRedemption: \tab "GR"\cr
+    $ Education: \tab "EDU"\cr
+  }
 }
 \source{
   http://www.apple.com/itunesnews/docs/AppStoreReportingInstructions.pdf
 }
 \examples{
-#  rtc <- rtconnect()
-#  subset(rtc, promo.code=kPromotionalCodes$GiftPurchase);
+  kPromotionalCodes
+  kPromotionalCodes$GiftPurchase
 }
-\keyword{datasets}
+\keyword{constants}
