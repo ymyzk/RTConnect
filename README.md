@@ -30,6 +30,20 @@ rtc <- rtconnect("~/data/daily/")
 ```
 
 Plot number of installed units  
-```r
+```R
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="daily")
 ```
+
+Plot, plot, plot...
+```R
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall, date.gte=Sys.Date()-31), type="daily.version")
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="weekly")
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneUpdate), type="weekly.version")
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$Install), type="country")
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$Update), type="version")
+
+plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="daily")
+plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="weekly")
+```
+
+
