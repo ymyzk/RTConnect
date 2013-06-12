@@ -11,9 +11,20 @@ install.packages("RTConnect")
 
 How to use
 ----------
+### Download report files ###
 1. Download sales report files from [iTunes Connect](https://itunesconnect.apple.com/WebObjects/).
   * Download daily sales report files. (Ex. S_D_NNNNNNNN_YYYYMMDD.txt)
 2. Put them in a directory.
   * Ex. ~/data/daily/S_D_NNNNNNNN_*.txt
 3. Analyze report files with RTConnect.
+### Analyze with RTConnect ###
+```r
+# Load RTConnect
+library(RTConnect)
 
+# Open sales report files
+rtc <- rtconnect("~/data/daily/")
+
+# Plot number of installed units
+barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="daily")
+```
