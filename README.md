@@ -17,16 +17,19 @@ How to use
 2. Put them in a directory.
   * Ex. ~/data/daily/S_D_NNNNNNNN_*.txt
 3. Analyze report files with RTConnect.
+
 ### Analyze with RTConnect ###
-Load RTConnect
+Load RTConnect  
 ```r
 library(RTConnect)
 ```
-Open sales report files
+
+Open sales report files  
 ```r
 rtc <- rtconnect("~/data/daily/")
 ```
-Plot number of installed units
+
+Plot number of installed units  
 ```r
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="daily")
 ```
