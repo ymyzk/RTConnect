@@ -5,7 +5,7 @@ RTConnect is a tool for analyzing sales report files of iTunes Connect with R.
 Install
 -------
 ### CRAN ###
-```r
+```
 install.packages("RTConnect")
 ```
 
@@ -19,23 +19,23 @@ How to use
 3. Analyze report files with RTConnect.
 
 ### Analyze with RTConnect ###
-Load RTConnect  
-```r
+Load RTConnect
+```
 library(RTConnect)
 ```
 
-Open sales report files  
-```r
+Open sales report files
+```
 rtc <- rtconnect("~/data/daily/")
 ```
 
-Plot number of installed units  
-```R
+Plot number of installed units
+```
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="daily")
 ```
 
 Plot, plot, plot...
-```R
+```
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall, date.gte=Sys.Date()-31), type="daily.version")
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="weekly")
 barplot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneUpdate), type="weekly.version")
@@ -46,4 +46,8 @@ plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), 
 plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="weekly")
 ```
 
+Link
+----
+* [CRAN - Package RTConnect](http://cran.r-project.org/web/packages/RTConnect/index.html)
+* [Reference manual](http://cran.r-project.org/web/packages/RTConnect/RTConnect.pdf)
 
