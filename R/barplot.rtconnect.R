@@ -1,5 +1,6 @@
 barplot.rtconnect <-
-function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
+function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL,
+         plab=FALSE, ...) {
   rtc <- height
   names.arg <- NULL
   legend.text <- NULL
@@ -112,13 +113,18 @@ function(height, type="daily", main=NULL, xlab=NULL, ylab=NULL, ...) {
   if (missing(xlab)) xlab <- t.xlab
   if (missing(ylab)) ylab <- t.ylab
 
-  barplot(
+  bp <- barplot(
     units,
     names.arg=names.arg,
+    ylim=c(0, 1.1 * max(units)),
     main=main,
     xlab=xlab,
     ylab=ylab,
     legend.text=legend.text,
     col=col
   )
+
+  if (plab) {
+    text(bp, units, units, adj=c(.5,-.5))
+  }
 }

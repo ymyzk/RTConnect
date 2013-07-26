@@ -1,8 +1,8 @@
 Package: RTConnect
 Type: Package
 Title: Tools for analyzing sales report files of iTunes Connect.
-Version: 0.1
-Date: 2013-06-12
+Version: 0.1.1
+Date: 2013-07-27
 Author: Yusuke Miyazaki
 Maintainer: Yusuke Miyazaki <miyazaki.dev@gmail.com>
 Description: Tools for analyzing sales report files of iTunes Connect.
