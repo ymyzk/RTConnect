@@ -8,7 +8,7 @@
 }
 \usage{
   \method{barplot}{rtconnect}(height, type = "daily",
-      main = NULL, xlab = NULL, ylab = NULL, ...)
+      main = NULL, xlab = NULL, ylab = NULL, plab = FALSE, ...)
 }
 \arguments{
   \item{height}{
@@ -27,6 +27,9 @@
   }
   \item{ylab}{
     a label for the y axis.
+  }
+  \item{plab}{
+    whether or not display value labels.
   }
   \item{...}{
   }
