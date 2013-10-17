@@ -46,6 +46,10 @@ plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), 
 plot(subset(rtc, product.type.identifier=kProductTypeIdentifier$iPhoneInstall), type="weekly")
 ```
 
+License
+-------
+RTConnect is licensed under the terms of GNU General Public License Version 3. See LICENSE file.
+
 Link
 ----
 * [CRAN - Package RTConnect](http://cran.r-project.org/web/packages/RTConnect/index.html)
