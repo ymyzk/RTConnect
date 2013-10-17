@@ -5,7 +5,11 @@ function(daily.dir="~/data/daily") {
 
   data <- NULL
   for (f in daily.files) {
-    data <- rbind(data, read.table(f, sep="\t", header=T))
+    df <- read.table(f, sep="\t", header=T)
+    # 2013/10頃以前のレポートについてはCategoryが存在しないため
+    # Category列を削除して処理する
+    df$Category <- NULL
+    data <- rbind(data, df)
   }
 
   data$Version <- as.character(data$Version)
