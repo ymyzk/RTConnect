@@ -9,6 +9,9 @@ function(daily.dir="~/data/daily") {
     # 2013/10頃以前のレポートについてはCategoryが存在しないため
     # Category列を削除して処理する
     df$Category <- NULL
+    # 2014/9頃以前のレポートについては CMB が存在しないため
+    # 削除して処理する
+    df$CMB <- NULL
     data <- rbind(data, df)
   }
 
